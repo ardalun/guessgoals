@@ -1,0 +1,103 @@
+.c-masthead {
+  color: $lightest;
+  text-align: center;
+
+  &__bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(image-path('masthead-bg.svg'));
+    padding: 0;
+    height: 0;
+    width: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    padding-bottom: 100%;
+
+    @include phone {
+      padding-bottom: 125%;
+      background-position: center;
+      background-size: cover;
+    }
+    @include tablet {
+      padding-bottom: 125%;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  &__heros {
+    margin-top: calc(100px + 1rem);
+    margin-bottom: 2rem;
+  }
+  &__hero {
+    display: block;
+    line-height: 1.285;
+    
+    &--primary {
+      font-size: 3.5rem;
+      @include phone {
+        font-size: 1.4rem;
+      }
+    }
+    &--secondary {
+      font-size: 2.2rem;
+      color: $lighter;
+      font-weight: 400;
+      @include phone {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__laptop {
+    @include phone {
+      width: 100%;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include desktop {
+      width: 85%;
+    }
+    @include largescreen {
+      width: 70%;
+    }
+    @include widescreen {
+      width: 70%;
+    }
+  }
+
+  &__demo {
+    position: absolute;
+
+    @include phone {
+      left: 9.3%;
+      width: 81%;
+      top: calc(196px + 3.2vw);
+    }
+    @include tablet {
+      left: 9.3%;
+      width: 80.9%;
+      top: calc(245px + 3.2vw);
+    }
+    @include desktop {
+      left: 15.4%;
+      width: 68.8%;
+      top: 275px;
+    }
+    @include largescreen {
+      left: 21.5%;
+      width: 56.7%;
+      top: 275px;
+    }
+    @include widescreen {
+      left: 22%;
+      width: 55.7%;
+      top: 275px;
+    }
+  }
+}
+

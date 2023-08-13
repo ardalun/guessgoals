@@ -1,0 +1,32 @@
+.fixtures-index {
+  .fixtures-index-header {
+    border-bottom: 1px solid #C9DBFA;
+    background: #F6F9FE;
+    padding: 2rem 1rem 1rem;
+
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .fixtures-index-content {
+    padding-bottom: 2rem;
+    .ui.grid {
+      margin-top: 1rem;
+    }
+    .no-fixtures {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 10rem 0;
+      color: #cccccc;
+      width: 100%;
+    }
+    .ui.pagination.menu .item {
+      min-width: 1em;
+      text-align: center;
+      width: auto;
+      padding: 10px 15px;
+    }
+  }
+}

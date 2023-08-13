@@ -1,0 +1,145 @@
+$lightest-bg: white;
+$light-bg: #f6f7fb;
+$dark-bg: rgb(1, 14, 40);
+
+$darkest:    rgba(0, 0, 0, 1);
+$darker:     rgba(0, 0, 0, 0.85);
+$dark:       rgba(0, 0, 0, 0.6);
+$semi-dark:  rgba(0, 0, 0, 0.45);
+$little-dark: rgba(0, 0, 0, 0.2);
+
+$lightest:   rgba(255, 255, 255, 1);
+$lighter:    rgba(255, 255, 255, 0.85);
+$light:      rgba(255, 255, 255, 0.6);
+$semi-light: rgba(255, 255, 255, 0.45);
+$little-light: rgba(255, 255, 255, 0.2);
+
+$c1:    #2b6dfb;
+$c2:  #06da8f;
+
+
+body {
+  background-color: $light-bg;
+  font-weight: 400;
+}
+a, a:hover {
+  color: $c1;
+  font-weight: 400;
+}
+a.inverted {
+  color: $lightest;
+}
+b, strong, h1, .h1-like, h2, .h2-like, h3, .h3-like, h4, .h4-like, h5, .h4-like {
+  font-weight: 700;
+  line-height: 1.285;
+  margin: 0;
+}
+h1, .h1-like {
+  font-size: 2.4rem;
+}
+h2, .h2-like {
+  font-size: 1.7rem;
+}
+h3, .h3-like {
+  font-size: 1.3rem;
+}
+h4, .h4-like {
+  font-size: 1rem;
+}
+
+.ui.vertical.inverted.menu .item:before {
+  background: none;
+}
+.ui.menu .ui.dropdown .menu>.active.item {
+  font-weight: 400 !important;
+}
+.ui.inverted.menu {
+  background-color: $dark-bg;
+}
+.ui.grid.stackable {
+  margin: 0rem 1rem;
+}
+.ui.selection.active.dropdown,
+.ui.selection.active.dropdown:hover,
+.ui.selection.active.dropdown .menu,
+.ui.form input:not([type]):focus, 
+.ui.form input[type=date]:focus, 
+.ui.form input[type=datetime-local]:focus, 
+.ui.form input[type=email]:focus, 
+.ui.form input[type=file]:focus, 
+.ui.form input[type=number]:focus, 
+.ui.form input[type=password]:focus, 
+.ui.form input[type=search]:focus, 
+.ui.form input[type=tel]:focus, 
+.ui.form input[type=text]:focus, 
+.ui.form input[type=time]:focus, 
+.ui.form input[type=url]:focus {
+  border-color: $c1 !important;
+}
+.g-tleft {
+  text-align: left;
+}
+.g-tright {
+  text-align: right;
+}
+.g-tcenter {
+  text-align: center;
+}
+.g-regtext {
+  font-size: 1.14rem;
+  color: $semi-dark;
+}
+.g-borderless {
+  border: none;
+  box-shadow: none;
+}
+.g-tghost {
+  color: rgba(0,0,0,0.1);
+}
+
+.ui.inverted.menu .dropdown.item:hover, .ui.inverted.menu .link.item:hover, .ui.inverted.menu a.item:hover, .ui.link.inverted.menu .item:hover {
+  background: none;
+} 
+.ui.modal.transition.visible.active {
+    margin-top: 0 !important;
+}
+.ui.page.modals.dimmer.transition.visible.active {
+    display: flex !important;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  display: inline-block;
+}

@@ -1,0 +1,60 @@
+$phone-max:       768px;
+$tablet-max:      992px;
+$desktop-max:     1200px;
+$largescreen-max: 1920px;
+
+@mixin phone {
+  @media only screen and (max-width: #{$phone-max - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: #{$phone-max}) and (max-width: #{$tablet-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: #{$tablet-max}) and (max-width: #{$desktop-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin largescreen {
+  @media only screen and (min-width: #{$desktop-max}) and (max-width: #{$largescreen-max - 1px})  {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media only screen and (min-width: #{$largescreen-max}) {
+    @content;
+  }
+}
+
+@include phone {
+  [class*="mobile hidden"], [class*="tablet only"]:not(.mobile), [class*="computer only"]:not(.mobile), [class*="large screen only"]:not(.mobile), [class*="widescreen only"]:not(.mobile), [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+@include tablet {
+  [class*="mobile only"]:not(.tablet), [class*="tablet hidden"], [class*="computer only"]:not(.tablet), [class*="large screen only"]:not(.tablet), [class*="widescreen only"]:not(.tablet), [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+@include desktop {
+  [class*="mobile only"]:not(.computer), [class*="tablet only"]:not(.computer), [class*="computer hidden"], [class*="large screen only"]:not(.computer), [class*="widescreen only"]:not(.computer), [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+@include largescreen {
+  [class*="mobile only"]:not([class*="large screen"]), [class*="tablet only"]:not([class*="large screen"]), [class*="computer only"]:not([class*="large screen"]), [class*="large screen hidden"], [class*="widescreen only"]:not([class*="large screen"]), [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+@include widescreen {
+  [class*="mobile only"]:not([class*="widescreen"]), [class*="tablet only"]:not([class*="widescreen"]), [class*="computer only"]:not([class*="widescreen"]), [class*="large screen only"]:not([class*="widescreen"]), [class*="widescreen hidden"], [class*="widescreen or lower hidden"] {
+    display: none !important;
+  }
+}

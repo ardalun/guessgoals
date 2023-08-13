@@ -1,0 +1,97 @@
+// $icomoon-font-path: "/assets/fonts/icons" !default;
+
+$i-ball: "\e900";
+$i-betballist: "\e901";
+$i-bitcoin-sym: "\e902";
+$i-bitcoin: "\e903";
+$i-calendar: "\e904";
+$i-clock: "\e905";
+$i-error: "\e906";
+$i-live: "\e907";
+$i-spinner: "\e908";
+$i-success: "\e909";
+$i-whistle: "\e90a";
+
+
+@font-face {
+  font-family: 'icons';
+  src:  url(font-path('icons/icons.eot') + '?qnr7fk');
+  src:  url(font-path('icons/icons.eot') + '?qnr7fk#iefix') format('embedded-opentype'),
+        url(font-path('icons/icons.ttf') + '?qnr7fk') format('truetype'),
+        url(font-path('icons/icons.woff') + '?qnr7fk') format('woff'),
+        url(font-path('icons/icons.svg') + '?qnr7fk#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-ball {
+  &:before {
+    content: $i-ball; 
+  }
+}
+.i-betballist {
+  &:before {
+    content: $i-betballist; 
+  }
+}
+.i-bitcoin-sym {
+  &:before {
+    content: $i-bitcoin-sym; 
+  }
+}
+.i-bitcoin {
+  &:before {
+    content: $i-bitcoin; 
+  }
+}
+.i-calendar {
+  &:before {
+    content: $i-calendar; 
+  }
+}
+.i-clock {
+  &:before {
+    content: $i-clock; 
+  }
+}
+.i-error {
+  &:before {
+    content: $i-error; 
+  }
+}
+.i-live {
+  &:before {
+    content: $i-live; 
+  }
+}
+.i-spinner {
+  &:before {
+    content: $i-spinner; 
+  }
+}
+.i-success {
+  &:before {
+    content: $i-success; 
+  }
+}
+.i-whistle {
+  &:before {
+    content: $i-whistle; 
+  }
+}
+

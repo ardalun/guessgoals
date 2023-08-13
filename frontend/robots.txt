@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: 
+Disallow: /admin/
+
+Sitemap: https://guessgoals.com/sitemap.xml

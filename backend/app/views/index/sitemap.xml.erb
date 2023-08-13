@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://guessgoals.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://guessgoals.com/signup</loc>
+    <lastmod><%= DateTime.new(2018, 7, 23, 21, 0, 0, "EDT").xmlschema %></lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://guessgoals.com/login</loc>
+    <lastmod><%= DateTime.new(2018, 7, 23, 21, 0, 0, "EDT").xmlschema %></lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://guessgoals.com/forgot_password</loc>
+    <lastmod><%= DateTime.new(2018, 7, 23, 21, 0, 0, "EDT").xmlschema %></lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://guessgoals.com/terms-of-service</loc>
+    <lastmod><%= DateTime.new(2018, 7, 23, 21, 0, 0, "EDT").xmlschema %></lastmod>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://guessgoals.com/privacy-policy</loc>
+    <lastmod><%= DateTime.new(2018, 7, 23, 21, 0, 0, "EDT").xmlschema %></lastmod>
+    <priority>0.2</priority>
+  </url>
+  <% @leagues.each do |league| %>
+    <url>
+      <loc><%= "#{BASE_URL}#{league.url}" %></loc>
+      <changefreq>daily</changefreq>
+      <priority>0.9</priority>
+    </url>
+    <% if league.current_season %>
+      <% league.current_season.fixtures.where(status: :not_started).each do |f| %>
+        <url>
+          <loc><%= "#{BASE_URL}#{f.url}" %></loc>
+          <lastmod><%= league.current_season.created_at.xmlschema %></lastmod>
+          <priority>0.7</priority>
+        </url>
+      <% end %>
+      <% league.current_season.fixtures.where.not(status: :not_started).each do |f| %>
+        <url>
+          <loc><%= "#{BASE_URL}#{f.url}" %></loc>
+          <lastmod><%= f.starts_at.xmlschema %></lastmod>
+          <priority>0.1</priority>
+        </url>
+      <% end %>
+    <% end %>
+  <% end %>
+</urlset>

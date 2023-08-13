@@ -1,0 +1,43 @@
+.c-fwidget {
+  padding: 1rem;
+  background: $lightest;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+
+  &__league_logo {
+    width: 64px;
+    height: 64px;
+    padding: 12px;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: inherit;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -3rem;
+    margin-bottom: -3rem;
+    background: $lightest;
+  }
+  &__team_logo {
+    width: 75px;
+    max-height: 75px;
+  }
+  &__label {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__icon {
+    margin: 0 8px 0 0;
+  }
+  &__status {
+    &_label {
+      font-weight: 400;
+      color: $semi-dark;
+    }
+    &_value {
+      font-weight: 700;
+    }
+  }
+}

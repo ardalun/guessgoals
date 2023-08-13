@@ -1,0 +1,17 @@
+.c-stat {
+  &__icon {
+    font-size: 3rem;
+    color: $c1;
+    margin-bottom: 0.5rem;
+  }
+  &__key {
+    text-transform: uppercase;
+    color: $semi-dark;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  &__value {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,107 @@
+.c-navbar {
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  height: 64px;
+  line-height: 64px;
+  padding: 0 1rem;
+  background-color: $lightest-bg;
+  z-index: 100;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+
+  a:not(.c-navbar__btn) {
+    color: $dark;
+    &:hover {
+      color: $c1;
+    }
+  }
+  &__dropdown.ui.menu {
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    .visible.menu {
+      margin-top: 12px;
+      border-top: none;
+    }
+    .ui.dropdown .menu>.item {
+      color: $dark;
+      &:hover {
+        color: $c1 !important;
+        background: none !important;
+      }
+    }
+    .item {
+      background: none;
+      transition: color 0.5s ease;
+      color: $dark;
+      &:hover {
+        color: $c1;
+        background: none;
+      }
+      &.active {
+        &:hover {
+          background: none;
+          color: $c1;
+        }
+      }
+      &:before {
+        background: none;
+      }
+    }
+  }
+  &__brand {
+    font-size: 2rem;
+    vertical-align: middle;
+    color: $c1;
+  }
+
+  &__item {
+    margin: 0rem 0.5rem;
+    &--right {
+      float: right;
+    }
+    &--left {
+      float: left;
+    }
+  }
+
+  &__btn {
+    padding: 0.7rem 1.5rem;
+    border-radius: 3px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    border: 2px solid $c1;
+    color: $c1;
+    
+    &:hover {
+      background-color: $c1;
+      color: $lightest;
+    }
+  }
+
+  &.is-blended {
+    line-height: 100px;
+    height: 100px;
+    background-color: transparent;
+    box-shadow: none;
+    
+    a, .c-navbar__brand {
+      color: $lighter;
+      &:hover {
+        color: $lightest;
+      }
+    }
+
+    .c-navbar__btn {
+      border: 2px solid $lightest;
+      &:hover {
+        background-color: $lightest;
+        color: $c1;
+      }
+    }
+  }
+
+}

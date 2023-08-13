@@ -1,0 +1,31 @@
+.ui[class*="very basic"].box-table.table:not(.sortable):not(.striped), 
+.ui[class*="very basic"].box-table.table:not(.sortable):not(.striped),
+.table.box-table {
+
+  &.score_details {
+    font-size: 0.875rem;
+  }
+  tr {
+    th {
+      color: rgba(43,109,251, 0.6);
+    }
+    td {
+      color: $dark;
+    }
+    td, th {
+      &.left-aligned {
+        text-align: left;
+        padding-left: 1rem;
+      }
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      border-top: none;
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+    &:last-child {
+      td {
+        border: none;
+      }
+    }
+  }
+}

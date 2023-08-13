@@ -1,0 +1,27 @@
+.c-footer {
+  background: $dark-bg;
+  font-size: 1.14rem;
+  color: $semi-light;
+  
+  &__title {
+    font-weight: 700;
+    color: $lightest;
+    font-size: 1.3rem;
+  }
+  &__item {
+    margin-bottom: 1rem;
+    a {
+      color: $semi-light;
+      &:hover {
+        color: $light;
+      } 
+    }
+  }
+  &__brand {
+    color: $lightest;
+    font-size: 2rem;
+  }
+  &__caption {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <div style="background: #f3f3f5;margin: 0;font-family: Arial, sans-serif;font-size:16px;color: #3c4043;padding-bottom:50px;">
+      <div style="text-align:center;padding:30px;">
+        <img style="width: 179px;" src="<%= attachments['logo-light-full.png'].url %>" />
+      </div>
+      <div style="background: white;width: 600px;margin: 0 auto;padding: 32px;box-sizing: border-box;border:1px solid #e8eaed;">
+        <%= yield %>
+      </div>
+      <div style="width: 600px;margin: 0 auto;font-size: 12px;text-align: center;padding-top: 16px;">
+        <div style="margin-bottom: 0.25rem;">This email was sent to <%= @to %> because they are a member at guessgoals.com</div>
+        <div style="margin-bottom: 0.25rem;">Copyright © <%= DateTime.now.year %> - Guessgoals Inc.</div>
+      </div>
+    </div>
+  </body>
+</html>

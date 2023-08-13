@@ -1,0 +1,60 @@
+.fixture-page {
+  padding: 3rem 0;
+  * {
+    color: #4f4f4f;
+  }
+  .ui.grid>.row>.column {
+    &.no-padding-left {
+      padding-left: 0;
+    }
+    &.no-padding-right {
+      padding-right: 0;
+    }
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  img.team-logo {
+    height: 115px;
+  }
+  img.team-logo.small {
+    height: 64px;
+  }
+  img.team-logo.tiny {
+    height: 23px;
+    position: relative;
+    top: 4px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  span {
+    display: block;
+    font-size: 0.9rem;
+
+    &.vs {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    &.team-label {
+      margin-top: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+  
+  .vs {
+    display: block;
+    position: absolute;
+    left: calc(50% - 2rem);
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  #gchart>div>div {
+    margin: 0 auto;
+  }
+}

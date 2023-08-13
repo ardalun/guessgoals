@@ -1,0 +1,62 @@
+.c-goals_list {
+  overflow: hidden;
+  color: rgba(43, 109, 251, 0.6);
+
+  &__inputs {
+    float: left;
+    width: calc(100% - 45px);
+  }
+  &__input {
+    border: 1px solid rgba(0,0,0,0.1);
+    color: rgba(43, 109, 251, 0.6);
+    background-color: rgba(0, 0, 0, 0.04);
+    height: 35px;
+    border-radius: 2px;
+    line-height: 35px;
+    padding: 0 1rem;
+
+
+    &.is-not-null {
+      color: $dark;
+    }
+  }
+  &__nums {
+    width: 45px;
+    float: left;
+  }
+  &__num {
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgba(43, 109, 251, 0.6);
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    font-weight: 700;
+  }
+  &__logo {
+    position: relative;
+    top: 4px;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  // locked version of input
+  &__row {
+    color: $dark;
+    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+}
+
+.drag-ghost {
+  opacity: 0;
+}
+
+.rc-draggable-list-draggableRow {
+  padding-bottom: 0.5rem;
+}
+.rc-draggable-list-chosen {
+  padding-bottom: 0;
+}

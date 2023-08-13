@@ -1,0 +1,133 @@
+.box {
+  border: 1px solid #C9DBFA;
+  overflow: hidden;
+  padding: 1rem;
+  
+  &.stretched {
+    height: 100%;
+  }
+
+  &.relaxed-bottom {
+    padding-bottom: 2rem;
+  }
+  
+  .box-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .section-header {
+    border-bottom: 1px solid #C9DBFA;
+    color: #93b1e4;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .col {
+    &.relaxed {
+      padding: 3rem 0;
+    }
+    float: left;
+    &.col-50 {
+      width: 50%;
+    }
+    &.col-33 {
+      width: 33.33%;
+    }
+    &.col-40 {
+      width: 40%;
+    }
+    &.col-20 {
+      width: 20%;
+    }
+    &.col-key {
+      width: calc(40% - 15px);
+    }
+    &.col-value {
+      width: calc(60% - 15px);
+      &.green {
+        color: #36c136;
+      }
+    }
+    &.col-label {
+      width: calc(50% - 15px);
+    }
+    &.col-icon {
+      width: 30px;
+    }
+    &.text-center {
+      text-align: center;
+    }
+    &.text-left {
+      text-align: left;
+    }
+    &.text-right {
+      text-align: right;
+    }
+    .icon {
+      width: 32px;
+      margin-bottom: 0.5rem;
+
+      &.mini {
+        width: 16px;
+      }
+    }
+    .stat-value {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2f80ed;
+      margin-bottom: 0.25rem;
+      &.huge {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        height: 64px;
+        line-height: 64px;
+        img {
+          width: 64px;
+        }
+      }
+    }
+    .stat-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  .ui[class*="very basic"].box-table.table:not(.sortable):not(.striped), 
+  .ui[class*="very basic"].box-table.table:not(.sortable):not(.striped),
+  .table.box-table {
+
+    &.score_details {
+      font-size: 0.9rem;
+    }
+    tr {
+      th {
+        color: #93b1e4;
+      }
+      td, th {
+
+        &.left-aligned {
+          text-align: left;
+          padding-left: 1rem;
+        }
+        border-bottom: 1px solid #C9DBFA;
+        border-top: none;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-family: Nunito;
+        font-weight: 600;
+      }
+      &:last-child {
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+
+  &.divided .col:not(:last-child) {
+    border-right: 1px solid #C9DBFA;
+  }
+  &.alternate {
+    background-color: #F6F9FE;
+  }
+}

@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 2 } %>
+
+development:
+  <<: *default
+  database: gg_dev
+  #username: gg_user
+  #password:
+  #host: localhost
+  #port: 5432
+
+test:
+  <<: *default
+  database: gg_test
+
+production:
+  <<: *default
+  database: <%= ENV['PROD_DB'] %>
+  username: <%= ENV['PROD_DB_USER'] %>
+  password: <%= ENV['PROD_DB_USER_PASS'] %>

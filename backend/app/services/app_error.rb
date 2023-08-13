@@ -1,0 +1,43 @@
+
+module AppError
+  class MustBeCreditEntry < StandardError; end
+  class MustBeDebitEntry < StandardError; end
+  class TooLowUnconfirmedAmount < StandardError; end
+  class InvalidAmountToSend < StandardError; end
+  class InsufficientFunds < StandardError; end
+  class TooHighAmountToBeConfirmed < StandardError; end
+  class AiAlreadyPlayed < StandardError; end
+  class AddressNotFound < StandardError; end
+  class NotifNotFound < StandardError; end
+  class PermissionDenied < StandardError; end
+  class InvalidRequest < StandardError; end
+  class UserAlreadyPlayed < StandardError; end
+  class PoolIsClosed < StandardError; end
+  class MatchNotFound < StandardError; end
+  class PlayAlreadyAccepted < StandardError; end
+  class CannotAcceptLatePlay < StandardError; end
+  class CannotAcceptDeclinedPlay < StandardError; end
+  class CannotDeclineNonLatePlay < StandardError; end
+  class CannotDeclinePlayWithConfirmedPayment < StandardError; end
+  class MatchMustBeInProgressOrFinished < StandardError; end
+  class MatchAlreadyStarted < StandardError; end
+  class MatchMustBeInStartedState < StandardError; end
+  class MatchMustBeFinished < StandardError; end
+  class MatchAlreadyFinalized < StandardError; end
+  class InvalidBitcoinAddress < StandardError; end
+  class AddressIsInternal < StandardError; end
+  class AddressIsBlank < StandardError; end
+  class InvalidPaymentKind < StandardError; end
+  class IrreversibleEntryKind < StandardError; end
+  class WalletNotFound < StandardError; end
+  class NoFundsAvailableForPayout < StandardError; end
+  class AddressIsUsed < StandardError; end
+  class NonPayoutLedgerEntry < StandardError; end
+  class PayoutMustBeInProcessingState < StandardError; end
+  class UnableToSetTxFee < StandardError; end
+  class LedgerEntryNotFound < StandardError; end
+  class EntryMustBeConfirmed < StandardError; end
+  class PayoutMustBeInPendingConfirmationState < StandardError; end
+  class UserHasNotPlayedThisMatch < StandardError; end
+  class NoActivePrizeRuleIsFound < StandardError; end
+end

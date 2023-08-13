@@ -1,0 +1,30 @@
+.c-adbox {
+  background-color: $lightest;
+  border-radius: 6px;
+  padding: 2rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow: hidden;
+
+  &__icon {
+    display: block;
+    margin-bottom: 1rem;
+    color: $c1;
+    font-size: 3.5rem;
+  }
+
+  &__pretitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.875rem;
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+  }
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 1.14rem;
+    color: rgba(0,0,0,0.5);
+  }
+}

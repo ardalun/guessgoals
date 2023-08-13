@@ -1,0 +1,18 @@
+<% title_style = 'font-size: 1.1rem; font-weight: 900;' %>
+<% value_style = 'margin-bottom: 1rem;overflow-wrap: break-word;' %>
+<p>Your earlier unconfirmed credit transaction has just been confirmed. Details are attached below for your reference.</p>
+
+<div style="<%= title_style %>">Amount</div>
+<div style="<%= value_style %>"><%= @amount %> BTC</div>
+
+<div style="<%= title_style %>">Transaction Id</div>
+<div style="<%= value_style %>"><%= @txid %></div>
+
+<div style="<%= title_style %>">Received on Address</div>
+<div style="<%= value_style %>"><%= @address %></div>
+
+<div style="<%= title_style %>">Received at</div>
+<div style="<%= value_style %>"><%= @performed_at %></div>
+
+Thank You, <br>
+GuessGoals Support

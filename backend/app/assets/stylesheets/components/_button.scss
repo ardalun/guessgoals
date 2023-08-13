@@ -1,0 +1,27 @@
+.c-btn, a.c-btn {
+  background-color: $c1;
+  color: $lighter;
+  padding: 0.7rem 1.5rem;
+  border-radius: 3px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  
+  &:hover {
+    color: $lightest;
+  }
+  &--fluid {
+    width: 100%;
+    display: inline-block;
+  }
+  &--large {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  &--success {
+    background-color: $c2;
+  }
+}

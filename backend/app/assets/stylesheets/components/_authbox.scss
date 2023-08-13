@@ -1,0 +1,9 @@
+.c-authbox, .ui.segment.c-authbox {
+  padding: 3.4rem;
+  border: none;
+  box-shadow: none;
+  &__brand {
+    font-size: 2rem;
+    color: $dark-bg;
+  }
+}

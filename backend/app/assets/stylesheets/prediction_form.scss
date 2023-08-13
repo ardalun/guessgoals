@@ -1,0 +1,88 @@
+.no-goals-yet {
+  font-size: 1.5rem;
+  text-align: center;
+  height: 10rem;
+  line-height: 10rem;
+  color: #d6e4fb;
+
+  &.locked {
+    color: #cccccc;
+  }
+}
+.goals {
+  overflow: hidden;
+  color: #93b1e4;
+
+  &.locked {
+     margin-top: -0.7rem;
+  }
+  .goal-row {
+    color: #4f4f4f;
+    overflow: hidden;
+    border-bottom: solid 1px #c9dbfa;
+
+    .goal-num {
+      float: left;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 32px;
+      height: 32px;
+      text-align: center;
+      width: 45px;
+    }
+    .goal-team {
+      float: left;
+    }
+    .goal-player {
+      line-height: 32px;
+      float: left;
+    }
+  }
+  .goal-nums {
+    width: 45px;
+    float: left;
+    
+    .goal-num {
+      height: 35px;
+      line-height: 35px;
+      font-size: 1.2rem;
+      text-align: center;
+      color: #93b1e4;
+      margin-bottom: 0.5rem;
+      padding: 0 1rem;
+      font-weight: 700;
+    }
+  }
+  .goal-boxes {
+    float: left;
+    width: calc(100% - 45px);
+
+    .goal-box {
+      color: #93b1e4;
+      height: 35px;
+      border-radius: 2px;
+      line-height: 35px;
+      padding: 0 1rem;
+
+      &.done {
+        color: #4f4f4f;
+      }
+    }
+  }
+}
+.goal-box {
+  background-color: #f6f9fe;
+  border: solid 1px #c9dbfa;
+}
+
+.ghost {
+  opacity: 0;
+}
+
+.rc-draggable-list-draggableRow {
+  padding-bottom: 0.5rem;
+}
+
+.players-container {
+  text-align: center;
+}

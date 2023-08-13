@@ -1,0 +1,411 @@
+body, html {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+.ant-input {
+  height: 48px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: unset;
+  font-weight: 700;
+}
+
+[ant-click-animating-without-extra-node='true']::after,
+.ant-click-animating-node {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.ant-drawer-close {
+  color: gray;
+}
+.ant-drawer-close:hover {
+  color: white;
+}
+.ant-popover-arrow {
+  border-width: 8.242641px;
+  border-radius: 2px;
+  margin-right: 2px;
+}
+
+.ant-popover-placement-bottom, .ant-popover-placement-bottomLeft, .ant-popover-placement-bottomRight {
+  padding-top: 13px;
+}
+
+.ant-message-notice-content {
+  margin: 0;
+  padding: 0;
+}
+.ant-popover-inner {
+  overflow: hidden;
+}
+.ant-popover-inner-content {
+  padding: 0;
+}
+
+@media (max-width: 1200px) {
+  .ant-popover-placement-bottomRight {
+    position: fixed;
+  }
+}
+
+@-webkit-keyframes c_loader_animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes c_loader_animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?yzs92r');
+  src:  url('../fonts/icomoon/icomoon.eot?yzs92r#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?yzs92r') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?yzs92r') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?yzs92r#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="im-"], [class*=" im-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.im-error:before {
+  content: "\e916";
+}
+.im-check:before {
+  content: "\e915";
+}
+.im-bundesliga:before {
+  content: "\e90f";
+}
+.im-champions-league:before {
+  content: "\e910";
+}
+.im-la-liga:before {
+  content: "\e911";
+}
+.im-ligue-1:before {
+  content: "\e912";
+}
+.im-premier-league:before {
+  content: "\e913";
+}
+.im-serie-a:before {
+  content: "\e914";
+}
+.im-menu:before {
+  content: "\e90e";
+}
+.im-arrow-down:before {
+  content: "\e900";
+}
+.im-arrow-left:before {
+  content: "\e901";
+}
+.im-arrow-right:before {
+  content: "\e902";
+}
+.im-arrow-up:before {
+  content: "\e903";
+}
+.im-close:before {
+  content: "\e904";
+}
+.im-dragndrop:before {
+  content: "\e905";
+}
+.im-bell:before {
+  content: "\e906";
+}
+.im-bitcoin:before {
+  content: "\e907";
+}
+.im-error-circle:before {
+  content: "\e90d";
+}
+.im-checkmark:before {
+  content: "\e908";
+}
+.im-info:before {
+  content: "\e909";
+}
+.im-loading:before {
+  content: "\e90a";
+}
+.im-support:before {
+  content: "\e90b";
+}
+.im-user:before {
+  content: "\e90c";
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-default .odometer-digit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer, .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon {
+  display: block;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-digit .odometer-ribbon-inner {
+  display: block;
+  -webkit-backface-visibility: hidden;
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value, .odometer.odometer-theme-default .odometer-digit .odometer-value {
+  display: block;
+  -webkit-transform: translateZ(0);
+}
+.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value, .odometer.odometer-theme-default .odometer-digit .odometer-value.odometer-last-value {
+  position: absolute;
+}
+.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 200ms;
+  -moz-transition: -moz-transform 200ms;
+  -ms-transition: -ms-transform 200ms;
+  -o-transition: -o-transform 200ms;
+  transition: transform 200ms;
+}
+.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-up.odometer-animating .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down .odometer-ribbon-inner {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner, .odometer.odometer-theme-default.odometer-animating-down.odometer-animating .odometer-ribbon-inner {
+  -webkit-transition: -webkit-transform 200ms;
+  -moz-transition: -moz-transform 200ms;
+  -ms-transition: -ms-transform 200ms;
+  -o-transition: -o-transform 200ms;
+  transition: transform 200ms;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-default {
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 1.1em;
+}
+.odometer.odometer-auto-theme .odometer-value, .odometer.odometer-theme-default .odometer-value {
+  text-align: center;
+}
+
+.rdl-ghost {
+  opacity: 0;
+}
+
+.rc-draggable-list-draggableRow {
+  padding-bottom: 0.5rem;
+  border-radius: 10rem;
+  background-color: transparent;
+}
+.rc-draggable-list-chosen {
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+  display: inline-block;
+}
+
+.ant-notification {
+  width: 470px;
+  top: 16px !important;
+  margin-right: 16px;
+}
+.gg-notification-error {
+  background: #F64747;
+  color: white;
+}
+.gg-notification-success {
+  background: #00B16A;
+  color: white;
+}
+
+
+/* NProgress */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #FF7E00;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #FF7E00, 0 0 5px #FF7E00;
+  opacity: 1;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  display: none;
+
+  border: solid 3px transparent;
+  border-top-color: #FF7E00;
+  border-left-color: #FF7E00;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

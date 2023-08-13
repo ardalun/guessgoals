@@ -1,0 +1,14 @@
+:concurrency: 1
+:queues:
+  - default
+  - mailers
+  - telegram_transfers
+:schedule:
+  PullTransactionsWorker:
+    every: '10m'
+    description: 'Pulls transactions from bitcoin service'
+  PullSportsDataWorker:
+    every: ['1d', first_in: '6h']
+    description: 'Pulls and syncs seasons, teams, players, and matches'
+  ScheduleCheckMatchStartedWorker:
+    every: ['1h', first_in: '0s']

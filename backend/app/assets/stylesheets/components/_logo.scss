@@ -1,0 +1,20 @@
+.c-logo {
+  &--l {
+    width: 115px;
+    &--flex {
+      width: 115px;
+      @include tablet {
+        width: 100px;
+      }
+      @include phone {
+        width: 75px;
+      }
+    }
+  }
+  &--m {
+    width: 64px;
+  }
+  &--s {
+    width: 20px;
+  }
+}
